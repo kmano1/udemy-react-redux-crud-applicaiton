@@ -1,7 +1,7 @@
 import {INCREMENT,DECREMENT} from '../actions'
 
 const initialState={value:0}
-export default (state=initalState,action)=> {
+export default (state=initialState,action)=> {
     switch(action.type){
         case INCREMENT:
             return {vale: state.value+1}
