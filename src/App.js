@@ -2,14 +2,14 @@ import React,{ Component } from 'react';
 
 class App extends Component{
   render() {
-     return <h1>Hello, world!</h1>;
+    return (
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+        <input id="bar" type="text" onClick={()=>{console.log("aaa")}} />
+      </React.Fragment>
+    )
   }
 }
 
-// function App() {
-//   return (
-//     <div>Hello, world!!</div>
-//   );
-// }
 
 export default App;
